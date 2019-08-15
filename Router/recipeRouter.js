@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
     });
 });
 
-router.get("/shoppingList/:id", (req, res) => {
+router.get("/:id/shoppinglist", (req, res) => {
   const id = req.params.id;
   RecipeFunctions.getShoppingList(id)
     .then(shoppingList => {
@@ -23,7 +23,7 @@ router.get("/shoppingList/:id", (req, res) => {
     });
 });
 
-router.get("/instructions/:id", (req, res) => {
+router.get("/:id/instructions", (req, res) => {
   const id = req.params.id;
   RecipeFunctions.getInstructions(id)
     .then(instructions => {

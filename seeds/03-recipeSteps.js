@@ -5,7 +5,7 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('recipeSteps').insert([
-        {steps: "Prepare meatloaf.  Cook it.  Eat it.", recipe_id: 1},
+        {steps: "Prepare meatloaf.", recipe_id: 1},
         {steps: "Cook it.", recipe_id: 1},
         {steps: "Eat it.", recipe_id: 1},
         {steps: "Get pan.", recipe_id: 2},
